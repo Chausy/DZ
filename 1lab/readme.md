@@ -25,7 +25,10 @@ switch - S1 - VLAN 1 - 192.168.1.1/24
 - line console 0 - перешел в настройку консольного подключения  
 - password cisco - задал пароль cisco на доступ консоль
 - login - чтобы при подключении в консоль вывелось вести пароль  
-- logging synchronous - чтобы консольные сообщения не прерывали выполнение команд  
+- logging synchronous - чтобы консольные сообщения не прерывали выполнение команд    
+
+![](https://github.com/Chausy/DZ/blob/e32e2e50ebfc27292621cf6edb1d113353a5759f/1.1.PNG)  
+![](https://github.com/Chausy/DZ/blob/e32e2e50ebfc27292621cf6edb1d113353a5759f/1.2.PNG)  
  
 ### Настройка интерфейса  
 Для этого с помощью консольного подключения с помощью эмуляции терминала: 
@@ -34,15 +37,22 @@ switch - S1 - VLAN 1 - 192.168.1.1/24
 - ip address 192.168.1.1 255.255.255.0 - присваем IP-адрес и маску коммутатору  
 - no shutdown - включить интерфейс  
 
+![](https://github.com/Chausy/DZ/blob/e32e2e50ebfc27292621cf6edb1d113353a5759f/2.1.PNG)  
+
 ### Установка баннера
 Для этого с помощью консольного подключения с помощью эмуляции терминала: 
 - conf t  
 - banner motd *Unauthorized access is strictly prohibited. * - при подключении к консоли будем видеть данное сообщение  
 
+![](https://github.com/Chausy/DZ/blob/e32e2e50ebfc27292621cf6edb1d113353a5759f/3.1.PNG)
+
 ### Зашифруем все пароли  
 Для этого с помощью консольного подключения с помощью эмуляции терминала: 
 - conf t  
 - service password-encryption - для шифрования паролей (перевода в 16ричную СС)  
+
+![](https://github.com/Chausy/DZ/blob/e32e2e50ebfc27292621cf6edb1d113353a5759f/4.1.PNG)  
+![](https://github.com/Chausy/DZ/blob/e32e2e50ebfc27292621cf6edb1d113353a5759f/4.2.PNG)  
 
 ### Настройка канала виртуального соединения для удаленного управления (vty)  
 Для этого с помощью консольного подключения с помощью эмуляции терминала: 
@@ -53,7 +63,19 @@ switch - S1 - VLAN 1 - 192.168.1.1/24
 - logging synchronous - чтобы консольные сообщения не прерывали выполнение команд  
 - transport input telnet - включаем протокол телнет для удаленного доступа к коммутатору
 
-### Прилагаю конфигурацию коммутатора  
+![](https://github.com/Chausy/DZ/blob/e32e2e50ebfc27292621cf6edb1d113353a5759f/6.1.PNG)  
+
+### Скрины  
+1) PC-A отправил эхо-запрос на административный адрес интерфейса SVI коммутатора S1
+![](https://github.com/Chausy/DZ/blob/e32e2e50ebfc27292621cf6edb1d113353a5759f/ping%20c%20S1.PNG)
+  
+2) PC-A с помощью утилиты ping проверьте связь с адресом PC-A  
+![](https://github.com/Chausy/DZ/blob/e32e2e50ebfc27292621cf6edb1d113353a5759f/ping%20PC-A.PNG)  
+  
+3) Скрины конфига из Telnet
+
+![](https://github.com/Chausy/DZ/blob/e32e2e50ebfc27292621cf6edb1d113353a5759f/SSH%201.PNG)  
+![](https://github.com/Chausy/DZ/blob/e32e2e50ebfc27292621cf6edb1d113353a5759f/SSH2.PNG)
 
 
 
