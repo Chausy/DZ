@@ -1,6 +1,6 @@
 ### Лабораторная работа. Базовая настройка коммутатора 
 ### 1) Топология
-![]([https://github.com/Chausy/DZ/blob/4b9b85e7a1f1e7b0b7ada10123fd8931a3a0f971/%D1%82%D0%BE%D0%BF%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.PNG](https://github.com/Chausy/DZ/blob/65458582f721379ecbdfbb5c88e8919ab3e094ce/screen%202lab/%D1%82%D0%BE%D0%BF%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.PNG))
+![](https://github.com/Chausy/DZ/blob/1a4b517aac11fcc4f7093a0751c0336050aacad6/screen%202lab/%D1%82%D0%BE%D0%BF%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.PNG)
 ### Таблица адресации
 ![](https://github.com/Chausy/DZ/blob/65458582f721379ecbdfbb5c88e8919ab3e094ce/screen%202lab/%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B0%20%D0%B0%D0%B4%D1%80%D0%B5%D1%81%D0%B0%D1%86%D0%B8%D0%B8.PNG)  
 ###	Необходимые ресурсы  
@@ -78,17 +78,36 @@
 ![](https://github.com/Chausy/DZ/blob/f7d56523d875510c5bc8342d31c3d88f841d0128/screen%202lab/ip%20S2.PNG)  
 
 
-### Скрины  
-1) PC-A отправил эхо-запрос на административный адрес интерфейса SVI коммутатора S1
-![](https://github.com/Chausy/DZ/blob/e32e2e50ebfc27292621cf6edb1d113353a5759f/ping%20c%20S1.PNG)
-  
-2) PC-A с помощью утилиты ping проверьте связь с адресом PC-A  
-![](https://github.com/Chausy/DZ/blob/e32e2e50ebfc27292621cf6edb1d113353a5759f/ping%20PC-A.PNG)  
-  
-3) Скрины конфига из Telnet
+# Изучение таблицы МАС-адресов коммутатора  
+Открыл командную строку на PC-A и ввел команду ipconfig /all
 
-![](https://github.com/Chausy/DZ/blob/e32e2e50ebfc27292621cf6edb1d113353a5759f/SSH%201.PNG)  
-![](https://github.com/Chausy/DZ/blob/e32e2e50ebfc27292621cf6edb1d113353a5759f/SSH2.PNG)
+![](https://github.com/Chausy/DZ/blob/29e7355fe4ae992a45b92a3258e5d4dab36fca22/screen%202lab/ipconfig%20PC-A.PNG)  
+MAC-адрес компьютера PC-A - физический адрес в скрине  
+
+Подключился к коммутаторам S1 и S2 через консоль и ввел команды show interface F0/1 на каждом коммутаторе.
+S1  
+![](https://github.com/Chausy/DZ/blob/29e7355fe4ae992a45b92a3258e5d4dab36fca22/screen%202lab/show%20interface%20S1.PNG)  
+S2  
+![](https://github.com/Chausy/DZ/blob/29e7355fe4ae992a45b92a3258e5d4dab36fca22/screen%202lab/show%20interface%20S2.PNG)
+
+### Просмотреть таблицу МАС-адресов коммутатора S2  
+![](https://github.com/Chausy/DZ/blob/29e7355fe4ae992a45b92a3258e5d4dab36fca22/screen%202lab/show%20mac%20address-table%20S2.PNG)  
+
+### Очистил таблицу МАС-адресов коммутатора S2 и снова отобразил таблицу МАС-адресов  
+![](https://github.com/Chausy/DZ/blob/29e7355fe4ae992a45b92a3258e5d4dab36fca22/screen%202lab/%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%20clear%20mac%20address-table%20dynamic%20S2.PNG)
+
+### С компьютера PC-B отправил эхо-запросы устройствам в сети и просмотрел таблицу МАС-адресов коммутатора
+На компьютере PC-B открыл командную строку и ввел команду arp -a, а так же выполнил эхо-запросы с ПК-А, S1, S2  
+![](https://github.com/Chausy/DZ/blob/29e7355fe4ae992a45b92a3258e5d4dab36fca22/screen%202lab/arp%20%D0%B8%20%D1%8D%D1%85%D0%BE%20%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%20%D1%81%20PC-B.PNG)
+
+После эхо-запроса выполним команду show mac address-table  
+![](https://github.com/Chausy/DZ/blob/29e7355fe4ae992a45b92a3258e5d4dab36fca22/screen%202lab/%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%20%D1%8D%D1%85%D0%BE%20%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D0%BE%D0%B2%20%D1%81%20PC-B%20%D1%81%20%D0%BA%D0%BE%D0%BC%D0%BC%D1%83%D1%82%D0%B0%D1%82%D0%BE%D1%80%D0%B0%20S2%20show%20mac%20address-table.PNG)
+
+
+
+
+
+
 
 
 
