@@ -1,6 +1,5 @@
 ### Лабораторная работа. Просмотр таблицы MAC-адресов коммутатора
-### 1) Топология
-![](https://github.com/Chausy/DZ/blob/2affe29a1fdd636d560d06ad9918cb96c648e5fc/4lab%20screens/1)%20%D1%82%D0%BE%D0%BF%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.PNG)
+
 ### Таблица адресации
 ![](https://github.com/Chausy/DZ/blob/31ae469d82c7ba495d7ac22b32c28af474331572/4lab%20screens/%D0%A2%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B0%20%D0%B0%D0%B4%D1%80%D0%B5%D1%81%D0%B0%D1%86%D0%B8%D0%B8.PNG)  
 
@@ -13,6 +12,7 @@
 
 # Выполним базовую настройку для первого коммутатора S1
 ![](https://github.com/Chausy/DZ/blob/2affe29a1fdd636d560d06ad9918cb96c648e5fc/4lab%20screens/%D0%B2%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BD%D0%B0%20%D0%BA%D0%BE%D0%BC%D0%BC%D1%83%D1%82%D0%B0%D1%82%D0%BE%D1%80%D0%B5%20ipv6.PNG)
+![](https://github.com/Chausy/DZ/blob/48bb34987974569d48a96facbe860451de470259/4lab%20screens/%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0%20S1%20ipv6.PNG)
   
 ### Выполнение команды на R1 show ipv6 interface brief  
 ![](https://github.com/Chausy/DZ/blob/2affe29a1fdd636d560d06ad9918cb96c648e5fc/4lab%20screens/show%20ipv6%20interface%20brief.PNG)
