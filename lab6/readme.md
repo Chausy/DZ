@@ -23,8 +23,7 @@
 ![](https://github.com/Chausy/DZ/blob/c4353d1d71d425f0b8a23aad2e9ecc341dfc1752/lab6/%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D0%BC%20Ip%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%B2%20%D0%B0%D0%BD%D0%B0%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%B4%D0%BB%D1%8F%20%D0%B2%D1%82%D0%BE%D1%80%D0%BE%D0%B3%D0%BE.PNG)   
 ### аналогично и для второго PC в соотвествии с таблицей
 
-  
-# выполняем настройку маршрутизатора R1
+# подинтерфейсы R1
 ![](https://github.com/Chausy/DZ/blob/c4353d1d71d425f0b8a23aad2e9ecc341dfc1752/lab6/gjlbynthatqcs%20R1.PNG)  
 
 
