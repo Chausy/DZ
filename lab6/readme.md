@@ -1,7 +1,7 @@
 ### Лабораторная работа. Доступ к сетевым устройствам по протоколу SSH
 
 ### Топология
-![]([[https://github.com/Chausy/DZ/blob/94938b8ebf577308a8f2c5fe566e13cd6a84ac2c/5lab%20screen/%D1%82%D0%BE%D0%BF%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.PNG](https://github.com/Chausy/DZ/blob/16f6c3ef782bf6c04d918639e58396be96eab86c/lab6/%D1%82%D0%BE%D0%BF%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.PNG))  
+![](https://github.com/Chausy/DZ/blob/16f6c3ef782bf6c04d918639e58396be96eab86c/lab6/%D1%82%D0%BE%D0%BF%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.PNG)
 ![]([[https://github.com/Chausy/DZ/blob/94938b8ebf577308a8f2c5fe566e13cd6a84ac2c/5lab%20screen/%D1%82%D0%BE%D0%BF%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.PNG](https://github.com/Chausy/DZ/blob/b42ac100d1492458d422974bfb4c6dae5fffa1f8/lab6/%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B0%20%D0%B0%D0%B4%D1%80%D0%B5%D1%81%D0%B0%D1%86%D0%B8%D0%B8.PNG))
 ![]([https://github.com/Chausy/DZ/blob/94938b8ebf577308a8f2c5fe566e13cd6a84ac2c/5lab%20screen/%D1%82%D0%BE%D0%BF%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.PNG)
 
